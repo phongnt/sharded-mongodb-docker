@@ -7,8 +7,6 @@ services:
     build:
       context: mongod
     command: mongod -f /etc/mongod.conf --shardsvr --replSet shard0
-    volumes:
-      - ./mongod/mongod.conf:/etc/mongod.conf
     networks:
       internalnetwork:
         aliases:
@@ -22,8 +20,6 @@ services:
     build:
       context: mongod
     command: mongod -f /etc/mongod.conf --shardsvr --replSet shard0
-    volumes:
-      - ./mongod/mongod.conf:/etc/mongod.conf
     networks:
       internalnetwork:
         aliases:
@@ -37,8 +33,6 @@ services:
     build:
       context: mongod
     command: mongod -f /etc/mongod.conf --shardsvr --replSet shard0
-    volumes:
-      - ./mongod/mongod.conf:/etc/mongod.conf
     networks:
       internalnetwork:
         aliases:
@@ -54,8 +48,6 @@ services:
     build:
       context: mongod
     command: mongod -f /etc/mongod.conf --shardsvr --replSet shard1
-    volumes:
-      - ./mongod/mongod.conf:/etc/mongod.conf
     networks:
       internalnetwork:
         aliases:
@@ -69,8 +61,6 @@ services:
     build:
       context: mongod
     command: mongod -f /etc/mongod.conf --shardsvr --replSet shard1
-    volumes:
-      - ./mongod/mongod.conf:/etc/mongod.conf
     networks:
       internalnetwork:
         aliases:
@@ -84,8 +74,6 @@ services:
     build:
       context: mongod
     command: mongod -f /etc/mongod.conf --shardsvr --replSet shard1
-    volumes:
-      - ./mongod/mongod.conf:/etc/mongod.conf
     networks:
       internalnetwork:
         aliases:
@@ -101,8 +89,6 @@ services:
     build:
       context: mongod
     command: mongod -f /etc/mongod.conf --configsvr --replSet configdb
-    volumes:
-      - ./mongod/mongod.conf:/etc/mongod.conf
     networks:
       internalnetwork:
         aliases:
@@ -116,8 +102,6 @@ services:
     build:
       context: mongod
     command: mongod -f /etc/mongod.conf --configsvr --replSet configdb
-    volumes:
-      - ./mongod/mongod.conf:/etc/mongod.conf
     networks:
       internalnetwork:
         aliases:
@@ -131,8 +115,6 @@ services:
     build:
       context: mongod
     command: mongod -f /etc/mongod.conf --configsvr --replSet configdb
-    volumes:
-      - ./mongod/mongod.conf:/etc/mongod.conf
     networks:
       internalnetwork:
         aliases:
